@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* postcss-ignore-next-line */
+@tailwind base;
+/* postcss-ignore-next-line */
+@tailwind components;
+/* postcss-ignore-next-line */
+@tailwind utilities;
+
+:root {
+  --primary: #006400; /* Fox Club Green */
+  --primary-dark: #004d00;
+  --primary-light: #008000;
+  --accent: #ffd700; /* Fox Club Gold */
+  --accent-dark: #ccac00;
+  --accent-light: #ffdf33;
+  --background: #f8f9fa;
+  --text: #333333;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+  
+  .rating-scale {
+    @apply flex items-center gap-1;
+  }
+  
+  .rating-dot {
+    @apply h-3 w-3 rounded-full bg-gray-200;
+  }
+  
+  .rating-dot-filled {
+    @apply bg-accent;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md bg-primary text-white font-medium hover:bg-primary-dark transition-colors duration-300 shadow-sm;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-md bg-accent text-gray-800 font-medium hover:bg-accent-dark transition-colors duration-300 shadow-sm;
+  }
+
+  /* Text on primary background */
+  .bg-primary, .bg-primary-dark, .bg-primary-light, [class*="bg-primary"] {
+    @apply text-white;
+  }
+
+  /* Text on primary background with opacity */
+  .bg-primary-opacity-10, .bg-primary-opacity-20, .bg-primary-opacity-30, 
+  .bg-primary-opacity-40, .bg-primary-opacity-50, .bg-primary-opacity-60, 
+  .bg-primary-opacity-70, .bg-primary-opacity-80, .bg-primary-opacity-90,
+  .bg-primary-bg-opacity-10, .bg-primary-bg-opacity-20, .bg-primary-bg-opacity-30, 
+  .bg-primary-bg-opacity-40, .bg-primary-bg-opacity-50, .bg-primary-bg-opacity-60, 
+  .bg-primary-bg-opacity-70, .bg-primary-bg-opacity-80, .bg-primary-bg-opacity-90 {
+    @apply text-gray-800;
+  }
+} 
