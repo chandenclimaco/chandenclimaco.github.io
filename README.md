@@ -2,6 +2,10 @@
 
 A modern, interactive website showcasing the top 10 Spring Break destinations for Fox Club members. This website provides detailed information about each destination, including costs, activities, nightlife options, and unique attractions.
 
+## Repository
+
+This project is hosted at: https://github.com/chandenclimaco/chandenclimaco.github.io
+
 ## Features
 
 - **Destination Browsing**: Browse through 10 curated Spring Break destinations with detailed information and ratings
@@ -29,7 +33,7 @@ A modern, interactive website showcasing the top 10 Spring Break destinations fo
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/foxclub/sb-website.git
+git clone https://github.com/chandenclimaco/chandenclimaco.github.io.git
 cd sb-website
 ```
 
@@ -79,4 +83,4 @@ This project is for the exclusive use of Fox Club members and is not available f
 ## Acknowledgements
 
 - Fox Club Social Committee for providing destination research
-- Unsplash for destination images 
+- Unsplash for destination images
