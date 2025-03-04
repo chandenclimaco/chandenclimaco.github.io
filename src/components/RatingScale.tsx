@@ -30,15 +30,15 @@ const RatingScale: React.FC<RatingScaleProps> = ({ type, value, showLabel = true
   const getIcon = () => {
     switch (type) {
       case 'cost':
-        return <FaDollarSign className="text-gray-700" />;
+        return <FaDollarSign className="text-gray-900" />;
       case 'nightlife':
-        return <FaGlassMartiniAlt className="text-gray-700" />;
+        return <FaGlassMartiniAlt className="text-gray-900" />;
       case 'adventure':
-        return <FaHiking className="text-gray-700" />;
+        return <FaHiking className="text-gray-900" />;
       case 'culture':
-        return <FaLandmark className="text-gray-700" />;
+        return <FaLandmark className="text-gray-900" />;
       case 'uniqueness':
-        return <FaStar className="text-gray-700" />;
+        return <FaStar className="text-gray-900" />;
       default:
         return null;
     }
@@ -48,11 +48,11 @@ const RatingScale: React.FC<RatingScaleProps> = ({ type, value, showLabel = true
   const normalizedValue = type === 'cost' ? 6 - safeValue : safeValue;
   
   return (
-    <div className="flex items-center">
+    <div className="flex flex-wrap items-center mb-2 sm:mb-0">
       {showLabel && (
-        <div className="flex items-center w-24 mr-2">
+        <div className="flex items-center w-24 mr-2 mb-1 sm:mb-0">
           {getIcon()}
-          <span className="ml-1 text-sm font-medium text-gray-700">{getLabel()}</span>
+          <span className="ml-1 text-sm font-medium text-gray-900">{getLabel()}</span>
         </div>
       )}
       <div className="rating-scale">

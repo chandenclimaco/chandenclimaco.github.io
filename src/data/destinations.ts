@@ -161,7 +161,7 @@ export const destinations: Destination[] = [
     name: "New Orleans",
     location: "Louisiana, USA",
     description: "Bourbon Street in the French Quarter – a lively strip famous for its music, bars, and nonstop revelry.",
-    imageUrl: "https://images.unsplash.com/photo-1569949381669-ecf31ae8e613?q=80&w=1000",
+    imageUrl: "https://images.unsplash.com/photo-1571893544028-06b07bf1fe21?q=80&w=1000",
     type: "Domestic city",
     budget: "Budget-Friendly to Mid-Range",
     ratings: {
@@ -206,7 +206,7 @@ export const destinations: Destination[] = [
     name: "San Juan",
     location: "Puerto Rico (U.S. Territory)",
     description: "A colorful street in Old San Juan, Puerto Rico – blending colonial Spanish architecture with Caribbean flair.",
-    imageUrl: "https://images.unsplash.com/photo-1579676672429-78e40f7989aa?q=80&w=1000",
+    imageUrl: "https://images.unsplash.com/photo-1605216663980-b7ca6e9f2451?q=80&w=1000",
     type: "Caribbean island city",
     budget: "Moderate Budget",
     ratings: {
@@ -396,7 +396,7 @@ export const destinations: Destination[] = [
     name: "Breckenridge",
     location: "Colorado, USA",
     description: "Spring skiing in Breckenridge – sunny skies, snowy peaks, and a lively ski-town atmosphere.",
-    imageUrl: "https://images.unsplash.com/photo-1422383264954-096a3c125df2?q=80&w=1000",
+    imageUrl: "https://images.unsplash.com/photo-1605540436563-5bca919ae766?q=80&w=1000",
     type: "Domestic mountain town",
     budget: "Mid-Range to High",
     ratings: {

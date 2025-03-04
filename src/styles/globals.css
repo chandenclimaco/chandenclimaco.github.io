@@ -53,7 +53,7 @@ body {
 
 @layer components {
   .container {
-    @apply max-w-7xl mx-auto px-4;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
   
   .rating-scale {
@@ -61,7 +61,7 @@ body {
   }
   
   .rating-dot {
-    @apply h-3 w-3 rounded-full bg-gray-200;
+    @apply h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-gray-200;
   }
   
   .rating-dot-filled {
@@ -73,11 +73,11 @@ body {
   }
   
   .btn-primary {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-md bg-primary text-white font-medium hover:bg-primary-dark transition-colors duration-300 shadow-sm;
+    @apply inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 rounded-md bg-primary text-white font-medium hover:bg-primary-dark transition-colors duration-300 shadow-sm;
   }
   
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-6 py-3 rounded-md bg-accent text-gray-800 font-medium hover:bg-accent-dark transition-colors duration-300 shadow-sm;
+    @apply inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 rounded-md bg-accent text-gray-900 font-medium hover:bg-accent-dark transition-colors duration-300 shadow-sm;
   }
 
   /* Text on primary background */
@@ -92,6 +92,19 @@ body {
   .bg-primary-bg-opacity-10, .bg-primary-bg-opacity-20, .bg-primary-bg-opacity-30, 
   .bg-primary-bg-opacity-40, .bg-primary-bg-opacity-50, .bg-primary-bg-opacity-60, 
   .bg-primary-bg-opacity-70, .bg-primary-bg-opacity-80, .bg-primary-bg-opacity-90 {
-    @apply text-gray-800;
+    @apply text-gray-900;
+  }
+  
+  /* Responsive text classes */
+  .text-responsive {
+    @apply text-sm sm:text-base;
+  }
+  
+  .heading-responsive {
+    @apply text-xl sm:text-2xl md:text-3xl font-bold;
+  }
+  
+  .subheading-responsive {
+    @apply text-lg sm:text-xl font-semibold;
   }
 } 
