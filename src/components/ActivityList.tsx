@@ -56,7 +56,7 @@ const ActivityList: React.FC<ActivityListProps> = ({ activities }) => {
             <div className="ml-4 flex-grow">
               <p className="font-medium">{activity.name}</p>
             </div>
-            <div className="ml-2 text-gray-500">
+            <div className="ml-2 text-gray-700">
               {getTimeIcon(activity.time)}
             </div>
           </li>
