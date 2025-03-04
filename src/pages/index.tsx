@@ -92,7 +92,7 @@ export default function Home() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="/destinations" className="btn-primary min-w-[200px]">
+            <a href="/destinations" className="btn-secondary min-w-[200px]">
               Browse Destinations
             </a>
             <a href="/compare" className="btn-secondary min-w-[200px]">

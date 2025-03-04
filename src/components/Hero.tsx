@@ -29,7 +29,7 @@ const Hero: React.FC<HeroProps> = ({ backgroundImage, title, subtitle }) => {
           <div className="flex flex-wrap justify-center gap-4">
             <a 
               href="/destinations" 
-              className="btn-primary min-w-[200px]"
+              className="btn-secondary min-w-[200px]"
             >
               <span>Browse Destinations</span>
               <FaChevronRight className="ml-2" />
